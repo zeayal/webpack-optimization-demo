@@ -5,17 +5,22 @@ module.exports = {
     mode: 'development',
     entry: {
         index: './src/index.js',
-        print:'./src/print.js'
+        another: './src/another-module.js'
     },
     plugins: [
         new CleanWebpackPlugin(),
         new HtmlWebpackPlugin({
-            title: '自定义标题'
+            template: path.resolve(__dirname, 'public/index.html')
         })
     ],
     output: {
         filename: '[name].bundle.js',
         path:  path.resolve(__dirname, 'dist'),
     },
+    optimization: {
+        splitChunks: {
+            chunks: 'all'
+        }
+    }
     
 }
