@@ -1,0 +1,23 @@
+{
+  "name": "webpack-optimization-demo",
+  "version": "1.0.0",
+  "description": "webpack分包加载demo",
+  "main": "index.js",
+  "author": "zeayal",
+  "license": "MIT",
+  "scripts": {
+    "watch": "webpack --watch --progress --config webpack.config.js"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "moment": "^2.29.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "4.x",
+    "html-webpack-plugin": "4.x",
+    "webpack": "4.x",
+    "webpack-cli": "3.x"
+  }
+}
